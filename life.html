@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Game of life</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="life.js"></script>
+		<style>
+			#canvas { 
+				border: 1px solid black;
+				background-color: lightgray
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="525" height="390" onclick="add(event)"></canvas>
+		<br />
+		<button onclick="reset()">reset</button>
+		<button onclick="next()">next</button>
+		<button onclick="play()">play</button>
+		<button onclick="stop()">stop</button>
+		<span id="iter">Iteration: 0</span>
+	</body>
+</html>
